@@ -1,10 +1,10 @@
-name: web-app-workflow
+name: Web app Workflow
 
 on:
-workflow-dispatch:
+  workflow_dispatch:
 
 jobs:
   test:
-      runout:ubuntu-latest
-      steps:
-      - run:echo"web app running"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "web application workflow is running"
